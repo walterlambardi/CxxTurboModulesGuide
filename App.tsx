@@ -17,13 +17,7 @@ import {
   View,
 } from 'react-native';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import { Colors, Header } from 'react-native/Libraries/NewAppScreen';
 import NativeSampleModule from './tm/NativeSampleModule';
 
 type SectionProps = PropsWithChildren<{
@@ -80,6 +74,11 @@ function App(): JSX.Element {
           <Section title="Cxx TurboModule">
             NativeSampleModule.reverseString('Native Sample Module') ={' '}
             {NativeSampleModule.reverseString('Native Sample Module')}
+          </Section>
+
+          <Section title="Cxx TurboModule 2">
+            NativeSampleModule.stringLength('123') ={' '}
+            {NativeSampleModule.stringLength('123')}
           </Section>
         </View>
       </ScrollView>

@@ -9,4 +9,8 @@ std::string NativeSampleModule::reverseString(jsi::Runtime& rt, std::string inpu
   return std::string(input.rbegin(), input.rend());
 }
 
+size_t NativeSampleModule::stringLength(jsi::Runtime& rt, std::string input) {
+  return input.length(); // Implementation of getStringLength method.
+}
+
 } // namespace facebook::react

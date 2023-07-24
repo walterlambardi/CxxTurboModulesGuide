@@ -4,6 +4,7 @@ import { TurboModuleRegistry } from 'react-native';
 
 export interface Spec extends TurboModule {
   readonly reverseString: (input: string) => string;
+  readonly stringLength: (input: string) => number;
 }
 
 export default TurboModuleRegistry.getEnforcing<Spec>('NativeSampleModule');
