@@ -2,6 +2,10 @@
   "name": "CxxTurboModulesGuide",
   "version": "0.0.1",
   "private": true,
+  "description": "React Native with Cxx Turbo Native Modules",
+  "author": "<Your Name> <your_email@your_provider.com> (https://github.com/<your_github_handle>)",
+  "license": "MIT",
+  "homepage": "https://github.com/<your_github_handle>/#readme",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
